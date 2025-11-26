@@ -5,7 +5,7 @@ import { newsCards } from "@/constants"
 const NewsSection = () => {
     return (
         <section className="max-w-[1440px] mx-auto flex flex-col px-6 py-20 gap-24">
-            <div className="flex flex-col gap-4 bg-blue-300 rounded-lg w-full p-12 justify-center items-center text-center">
+            <div className="flex flex-col gap-4 bg-blue-300 rounded-[30px] w-full p-12 justify-center items-center text-center">
                 <h1 className="font-semibold text-4xl">Introducing {'Cantonomics'}</h1>
                 <h3 className="font-semibold">Canton aligns rewards with the real value participants create.</h3>
                 <p className="max-w-[900px] text-[1.3rem] py-5">Every Canton Coin is earned, fairly rewarding builders, users, and operators. Think sustainable economics, not speculation. Canton flips the script on tokenomics.</p>
@@ -25,7 +25,7 @@ const NewsSection = () => {
 
                 <div className="flex gap-10">
                     {newsCards.map((n, idx) => (
-                        <div className="flex flex-col justify-between h-[300px] p-6 bg-gray-200 rounded-lg" key={idx}>
+                        <div className="flex flex-col justify-between h-[300px] p-6 bg-gray-200 rounded-[30px]" key={idx}>
                             <div className="flex flex-col gap-6">
                                 <div className="flex gap-4">
                                     <strong>{n.tag}</strong>

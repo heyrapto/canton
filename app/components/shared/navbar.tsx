@@ -45,7 +45,7 @@ const Navbar = () => {
                 </button>
 
                 {openIndex === i && n.hasDropdown && n.dropdownItems && (
-                  <div className="absolute bg-[#f6ffa4] p-6 top-[50px] rounded-[20px] flex flex-col gap-3 shadow-xl z-50">
+                  <div className="absolute bg-[#f6ffa4] p-6 top-[50px] rounded-[20px] flex flex-col gap-3 shadow-xl z-50 w-[300px]">
                     {n.dropdownItems.map((d, idx) => (
                       <Link href={d.href} key={idx} className="text-black hover:opacity-70">
                         {d.title}
