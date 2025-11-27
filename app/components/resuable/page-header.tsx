@@ -1,6 +1,10 @@
 import Image from 'next/image'
 import Button from '../ui/button'
 
+export interface ItemProp {
+    title: string
+}
+
 interface PageHeaderProps {
     title: string,
     description?: string,
@@ -9,15 +13,16 @@ interface PageHeaderProps {
     hasFlexImage?: boolean
     flexImage?: string
     textOnly?: boolean
+    items: ItemProp[]
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title, description, btnText, hasBgImage = true, hasFlexImage = false, flexImage, textOnly = false }) => {
-    if(textOnly) {
-        return(
-        <header className={`relative w-full bg-[#1b1b1b] ${btnText ? "h-[500px]" : "h-[450px]"} overflow-hidden text-white`}>
+const PageHeader: React.FC<PageHeaderProps> = ({ title, description, btnText, hasBgImage = true, hasFlexImage = false, flexImage, textOnly = false, items }) => {
+    if (textOnly) {
+        return (
+            <header className={`relative w-full bg-[#1b1b1b] ${btnText ? "h-[500px]" : items ? "h-[700px]" : "h-[450px]"} overflow-hidden text-white`}>
                 <div className="mt-[80px] z-10 max-w-[1440px] mx-auto h-full flex justify-between items-center px-6">
                     <div className="flex flex-col gap-4 max-w-full">
-                        <h1 className="text-7xl font-medium text-white">{title}</h1>
+                        <h1 className="text-6xl max-w-[700px] font-medium text-white">{title}</h1>
                         {description && (
                             <p className="text-3xl max-w-[600px]">{description}</p>
                         )}
@@ -25,6 +30,18 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, description, btnText, ha
                             <Button variant={'primary'} className="mt-20">
                                 {btnText}
                             </Button>
+                        )}
+                        {items && items.length > 0 && (
+                            <ul className='flex flex-col gap-2 max-w-[300px] mt-10'>
+                                {items.map((item, index) => (
+                                    <li
+                                        key={index}
+                                        className='text-[#f6ffa4] border-b border-gray-700 pb-2 text-medium text-xl font-semibold'
+                                    >
+                                        {item.title}
+                                    </li>
+                                ))}
+                            </ul>
                         )}
                     </div>
                 </div>
