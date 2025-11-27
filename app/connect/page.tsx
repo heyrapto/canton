@@ -7,7 +7,7 @@ import ConnectForm from '../components/ui/connect-form'
 const ConnectPage = () => {
     return (
         <PageLayout title="Create valuable connections" description="Connect to the trusted applications and ecosystem on Canton Network">
-            <div className="mx-auto max-w-[1440px] gap-[100px] flex flex-col py-16">
+            <div className="mx-auto max-w-[1440px] gap-[200px] flex flex-col py-16">
                 <section className="flex flex-col gap-10">
                     <p className='text-2xl max-w-[1000px]'>Get started with privacy-first tokenized assets and applications to unlock profitability, optimize capital and safely participate in institutional crypto markets.</p>
                     <div className="flex w-full gap-10">
@@ -20,7 +20,7 @@ const ConnectPage = () => {
                     </div>
                 </section>
 
-                <section className="p-12 flex flex-col lg:flex-row-reverse w-full justify-between items-start gap-12">
+                <section className="flex flex-col lg:flex-row-reverse w-full justify-between items-start gap-12">
                     <div className="flex-1 flex flex-col gap-6">
                         <p className="text-lg text-gray-700 leading-relaxed max-w-[700px]">
                             From traditional and institutional crypto markets, to insurance and mortgage markets the applications and digital assets on the Canton Network connect to deliver secure and frictionless value exchange at the speed of the internet.

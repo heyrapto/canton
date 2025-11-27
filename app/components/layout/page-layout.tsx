@@ -10,13 +10,14 @@ interface PageLayoutProps {
     flexImage?: string
     hasBgImage?: boolean
     hasFlexImage?: boolean
+    textOnly?: boolean
 }
 
-const PageLayout:React.FC<PageLayoutProps> = ({ children, title, description, btnText, flexImage, hasBgImage, hasFlexImage }) => {
+const PageLayout:React.FC<PageLayoutProps> = ({ children, title, description, btnText, flexImage, hasBgImage, hasFlexImage, textOnly }) => {
   return (
     <div className="flex flex-col">
         <Navbar />
-        <PageHeader flexImage={flexImage} hasBgImage={hasBgImage} hasFlexImage={hasFlexImage} title={title} description={description} btnText={btnText} />
+        <PageHeader textOnly={textOnly} flexImage={flexImage} hasBgImage={hasBgImage} hasFlexImage={hasFlexImage} title={title} description={description} btnText={btnText} />
         {children}
         <Footer />
     </div>

@@ -15,13 +15,13 @@ const WhyUsPage = () => {
                     <div className="flex flex-col gap-4">
                         <h1 className='text-4xl'>Introducing &#39;Cantonomics&apos;</h1>
                         <p>Canton aligns rewards with the real value participants create.</p>
-                        <p className="pt-2">Every Canton Coin is earned, fairly rewarding builders, users, and operators. Think sustainable economics, not speculation. Canton flips the script on tokenomics.</p>
+                        <p className="pt-2 max-w-[600px]">Every Canton Coin is earned, fairly rewarding builders, users, and operators. Think sustainable economics, not speculation. Canton flips the script on tokenomics.</p>
                         <Button variant='primary'>
                             The Role of Canton Coin
                         </Button>
                     </div>
-                    <video className="w-full h-full object-cover" autoPlay loop muted playsInline preload="metadata">
-                        <source src='/videos/' type="video/mp4" />
+                    <video className="w-[600px] h-[400px] object-cover rounded-2xl" autoPlay loop muted playsInline preload="metadata">
+                        <source src='/videos/Canton_Cantonomics.mp4' type="video/mp4" />
                     </video>
                 </section>
 
