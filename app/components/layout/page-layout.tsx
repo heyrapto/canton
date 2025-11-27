@@ -2,11 +2,21 @@ import Footer from "../shared/footer"
 import Navbar from "../shared/navbar"
 import PageHeader from "../resuable/page-header"
 
-const PageLayout = ({ children, title, description, btnText }: { children: React.ReactNode, title: string, description?: string, btnText?: string }) => {
+interface PageLayoutProps {
+    children: React.ReactNode, 
+    title: string, 
+    description?: string, 
+    btnText?: string
+    flexImage?: string
+    hasBgImage?: boolean
+    hasFlexImage?: boolean
+}
+
+const PageLayout:React.FC<PageLayoutProps> = ({ children, title, description, btnText, flexImage, hasBgImage, hasFlexImage }) => {
   return (
     <div className="flex flex-col">
         <Navbar />
-        <PageHeader title={title} description={description} btnText={btnText} />
+        <PageHeader flexImage={flexImage} hasBgImage={hasBgImage} hasFlexImage={hasFlexImage} title={title} description={description} btnText={btnText} />
         {children}
         <Footer />
     </div>
