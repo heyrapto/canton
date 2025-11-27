@@ -4,19 +4,32 @@ import Image from "next/image"
 import Button from "../ui/button"
 import { navItems } from "@/constants"
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { BiChevronDown, BiChevronUp } from "react-icons/bi"
 
 const Navbar = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [scrolled, setScrolled] = useState(false)
 
   const handleToggle = (index: number, hasDropdown: boolean) => {
     if (!hasDropdown) return
     setOpenIndex(openIndex === index ? null : index)
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <nav className="fixed bg-[#1b1b1b] w-full h-[10%] justify-center flex items-center z-50">
+    <nav
+      className={`fixed w-full h-[10%] justify-center flex items-center z-50 transition-all duration-300
+      ${scrolled ? "bg-[#1b1b1b] backdrop-blur-md shadow-lg" : "bg-transparent"}`}
+    >
       <div className="mx-auto max-w-[1440px] px-6 flex justify-between w-full">
         
         <Image 
@@ -68,4 +81,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

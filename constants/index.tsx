@@ -25,19 +25,19 @@ export const navItems: NavItem[] = [
             },
             {
                 title: "Run",
-                href: "/connect"
+                href: "/run"
             },
             {
                 title: "Ecosystem",
-                href: "/connect"
+                href: "/ecosystem"
             },
             {
-                title: "Connect",
-                href: "/connect"
+                title: "Why Us",
+                href: "/why-us"
             },
             {
-                title: "Connect",
-                href: "/connect"
+                title: "Global Synchronizer",
+                href: "/global"
             },
         ]
     },
@@ -50,60 +50,21 @@ export const navItems: NavItem[] = [
         title: "Use Cases",
         hasDropdown: true,
         dropdownItems: [
-            {
-                title: "Connect",
-                href: "/connect"
-            },
-            {
-                title: "Build",
-                href: "/build"
-            },
-            {
-                title: "Run",
-                href: "/connect"
-            },
-            {
-                title: "Ecosystem",
-                href: "/connect"
-            },
-            {
-                title: "Connect",
-                href: "/connect"
-            },
-            {
-                title: "Connect",
-                href: "/connect"
-            },
+            { title: "Crypto Derivatives", href: "/crypto" },
+            { title: "24x7 On-Chain Financing", href: "/onchain-financing" },
+            { title: "Private stablecoin payments on public blockchain", href: "/stablecoin-payments" }
         ]
     },
     {
         title: "Resources",
         hasDropdown: true,
         dropdownItems: [
-            {
-                title: "Connect",
-                href: "/connect"
-            },
-            {
-                title: "Build",
-                href: "/build"
-            },
-            {
-                title: "Run",
-                href: "/connect"
-            },
-            {
-                title: "Ecosystem",
-                href: "/connect"
-            },
-            {
-                title: "Connect",
-                href: "/connect"
-            },
-            {
-                title: "Connect",
-                href: "/connect"
-            },
+            { title: "FAQs", href: "/faqs" },
+            { title: "Pilot Reports", href: "/reports" },
+            { title: "Insights", href: "/insights" },
+            { title: "Newsroom", href: "/newsroom" },
+            { title: "Whitepapers", href: "/whitepaper" },
+            { title: "Brand Kit & Trademark Use", href: "/brand" }
         ]
     },
 ]
