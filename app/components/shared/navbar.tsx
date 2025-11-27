@@ -6,10 +6,12 @@ import { navItems } from "@/constants"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { BiChevronDown, BiChevronUp } from "react-icons/bi"
+import { useRouter } from "next/navigation"
 
 const Navbar = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
+  const router = useRouter();
 
   const handleToggle = (index: number, hasDropdown: boolean) => {
     if (!hasDropdown) return
@@ -71,7 +73,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <Button variant={"primary"}>
+          <Button variant={"primary"} onClick={() => router.push("/contact-us")}>
             Speak to an expert
           </Button> 
         </div>

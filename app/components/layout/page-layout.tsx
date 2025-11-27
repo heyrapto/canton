@@ -18,7 +18,7 @@ const PageLayout:React.FC<PageLayoutProps> = ({ children, title, description, bt
   return (
     <div className="flex flex-col">
         <Navbar />
-        <PageHeader items={items as any} textOnly={textOnly} flexImage={flexImage} hasBgImage={hasBgImage} hasFlexImage={hasFlexImage} title={title} description={description} btnText={btnText} />
+        <PageHeader items={items as any[]} textOnly={textOnly} flexImage={flexImage} hasBgImage={hasBgImage} hasFlexImage={hasFlexImage} title={title} description={description} btnText={btnText} />
         {children}
         <Footer />
     </div>
