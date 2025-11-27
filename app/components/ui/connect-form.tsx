@@ -32,7 +32,7 @@ const ConnectForm = () => {
     <div className="bg-[#f6ffa4] p-8 rounded-3xl">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <div className="flex gap-4 w-full">
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 flex-1">
                 <label htmlFor="firstName" className="text-black font-semibold">
                   First Name *
                 </label>
@@ -47,7 +47,7 @@ const ConnectForm = () => {
                 />
               </div>
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 flex-1">
                 <label htmlFor="lastName" className="text-black font-semibold">
                   Last Name *
                 </label>
@@ -64,7 +64,7 @@ const ConnectForm = () => {
               </div>
 
               <div className="flex gap-4 w-full">
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 flex-1">
                 <label htmlFor="companyName" className="text-black font-semibold">
                   Company Name *
                 </label>
@@ -79,7 +79,7 @@ const ConnectForm = () => {
                 />
               </div>
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 flex-1">
                 <label htmlFor="jobTitle" className="text-black font-semibold">
                   Job Title: *
                 </label>

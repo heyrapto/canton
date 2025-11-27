@@ -39,7 +39,6 @@ const ReportsPage = () => {
 
             {/* RIGHT */}
             <ConnectForm />
-
           </div>
         </div>
       </section>
