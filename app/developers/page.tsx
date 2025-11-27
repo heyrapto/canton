@@ -9,7 +9,9 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 const DevelopersPage = () => {
-    const [activeTab, setActiveTab] = useState('community')
+    type ResourceTabKey = keyof typeof resourcesData;
+
+const [activeTab, setActiveTab] = useState<ResourceTabKey>('community');
     return (
         <PageLayout title="Developers" description='Everything you need to go from idea to real-world financial applications. Start building today. ' hasFlexImage flexImage='/images/developer-hero.webp' btnText='View Docs'>
             <div className="flex flex-col gap-20 py-16">

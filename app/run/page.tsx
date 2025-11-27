@@ -1,5 +1,7 @@
 
+import { testimonials } from '@/constants'
 import PageLayout from '../components/layout/page-layout'
+import Testimonial from '../components/resuable/testimonial'
 import Button from '../components/ui/button'
 import ConnectForm from '../components/ui/connect-form'
 
@@ -39,11 +41,15 @@ const RunPage = () => {
                 </section>
 
                 {/* testimonials here */}
-                <section></section>
+                <Testimonial testimonials={testimonials} />
 
                 {/* video goes here */}
                 <section className="w-full bg-[#1b1b1b] text-white py-20">
-                    <div className="max-w-[1440px] mx-auto"></div>
+                    <div className="max-w-[1440px] mx-auto justify-center items-center flex">
+                    <video className="w-[800px] h-[500px] object-cover rounded-2xl" autoPlay loop muted playsInline preload="metadata">
+                        <source src='/videos/Canton_Cantonomics.mp4' type="video/mp4" />
+                    </video>
+                    </div>
                 </section>
 
                 <section className="py-20">

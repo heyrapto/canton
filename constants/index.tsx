@@ -86,3 +86,20 @@ export const newsCards = [
         title: "2026 is the year of pragmatic privacy in crypto: Canton, Zcash and more"
     },
 ]
+
+export const testimonials = [
+    {
+      quote:
+        "As we deliver on our goal of a single source of truth for the industry, the Canton Network showcased how our platform could play within the wider capital markets ecosystem to unlock settlement efficiencies and greater collateral mobility. Key to this is Canton’s ability to deliver both the unified ledger, but also the granular controls we need as an app operator, and the privacy demanded by our customers",
+      author: "Gary Klahr",
+      role: "Director of Strategic Initiatives, EquiLend 1Source",
+    },
+    {
+      quote:
+        "Building on the capital efficiencies and cost savings our solution is already bringing participants, connectivity with the broader Canton tokenization ecosystem can play an important role in driving the liquidity that supports the continued adoption of this emerging digital infrastructure for capital markets.",
+      author: "Horacio Barakat",
+      role:
+        "Head of Digital Innovation Capital Markets, GM of DLT Repo Platform, Broadridge",
+    },
+  ];
+  
