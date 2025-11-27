@@ -42,7 +42,7 @@ const ConnectForm = () => {
                   required
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="bg-white border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
+                  className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
 
@@ -57,7 +57,7 @@ const ConnectForm = () => {
                   required
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="bg-white border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
+                  className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
 
@@ -72,7 +72,7 @@ const ConnectForm = () => {
                   required
                   value={formData.companyName}
                   onChange={handleChange}
-                  className="bg-white border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
+                  className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
 
@@ -87,7 +87,7 @@ const ConnectForm = () => {
                   required
                   value={formData.jobTitle}
                   onChange={handleChange}
-                  className="bg-white border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
+                  className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
 
@@ -102,7 +102,7 @@ const ConnectForm = () => {
                   required
                   value={formData.companyEmail}
                   onChange={handleChange}
-                  className="bg-white border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
+                  className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
 
@@ -116,7 +116,7 @@ const ConnectForm = () => {
                   required
                   value={formData.industrySegment}
                   onChange={handleChange}
-                  className="bg-white border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
+                  className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
                 >
                   <option value="">Select...</option>
                   <option value="banking">Banking</option>
@@ -137,7 +137,7 @@ const ConnectForm = () => {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="bg-white border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black resize-none"
+                  className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black resize-none"
                 />
               </div>
 
