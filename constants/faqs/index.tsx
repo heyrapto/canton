@@ -113,4 +113,4 @@ export const faqData = [
         "This approach differs from traditional blockchains by allowing parallel processing of independent transactions while maintaining strong consistency guarantees for related transactions."
       ]
     }
-  ]
+]

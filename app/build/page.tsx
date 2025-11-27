@@ -2,6 +2,8 @@ import { featuresData, journeyData } from '@/constants/build'
 import PageLayout from '../components/layout/page-layout'
 import { BiChevronRight } from 'react-icons/bi'
 import ConnectForm from '../components/ui/connect-form'
+import Testimonial from '../components/resuable/testimonial'
+import { testimonials } from '@/constants'
 
 const BuildPage = () => {
     return (
@@ -53,8 +55,7 @@ const BuildPage = () => {
                 </section>
 
                 {/* testimonials section here */}
-                <section className='flex bg-[#ef8b7a] rounded-[30px] w-full h-[600px]'>
-                </section>
+                <Testimonial testimonials={testimonials} />
 
                 <section className="py-20">
                     <div className="mx-auto max-w-[1440px] px-6">

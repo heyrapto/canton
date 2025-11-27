@@ -29,8 +29,9 @@ const ConnectForm = () => {
         console.log("Form submitted:", formData)
       }
   return (
-    <div className="bg-[#f6ffa4] p-8 rounded-lg">
+    <div className="bg-[#f6ffa4] p-8 rounded-3xl">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+            <div className="flex gap-4 w-full">
               <div className="flex flex-col gap-2">
                 <label htmlFor="firstName" className="text-black font-semibold">
                   First Name *
@@ -60,7 +61,9 @@ const ConnectForm = () => {
                   className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
               </div>
+              </div>
 
+              <div className="flex gap-4 w-full">
               <div className="flex flex-col gap-2">
                 <label htmlFor="companyName" className="text-black font-semibold">
                   Company Name *
@@ -89,6 +92,7 @@ const ConnectForm = () => {
                   onChange={handleChange}
                   className="border border-black rounded px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-black"
                 />
+              </div>
               </div>
 
               <div className="flex flex-col gap-2">

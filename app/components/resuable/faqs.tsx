@@ -15,9 +15,10 @@ interface FaqItem {
 
 interface FaqAccordionProps {
   items: FaqItem[]
+  className?: string
 }
 
-const FaqAccordion = ({ items }: FaqAccordionProps) => {
+const FaqAccordion = ({ items, className }: FaqAccordionProps) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   const toggleAccordion = (index: number) => {
@@ -25,7 +26,7 @@ const FaqAccordion = ({ items }: FaqAccordionProps) => {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className={`"flex flex-col" ${className}`}>
       {items.map((item, index) => (
         <div 
           key={item.id} 

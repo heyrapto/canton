@@ -4,6 +4,8 @@ import PageLayout from '../components/layout/page-layout'
 import Button from '../components/ui/button'
 import Image from 'next/image'
 import { exploreData, resourcesData } from '@/constants/why-us'
+import { faqData } from '@/constants/faqs'
+import Faqs from '../components/resuable/faqs'
 
 const brandLogos = ["https://www.canton.network/hubfs/Copper-logo-transparent-1-2-e1741779637311.png", "https://www.canton.network/hubfs/Logos/Ecosystem/Cumberland/cumberland-logo-black2.png", "https://www.canton.network/hubfs/Logos/Ecosystem/DTCC/DTCC-logo-black.png", "https://www.canton.network/hubfs/Logos/Ecosystem/Tradeweb/Tradeweb-logo-black.png", "https://www.canton.network/hubfs/JP%20Morgan.png", "https://www.canton.network/hubfs/Logos/Ecosystem/QCP/qcp-capital-logo-black.png", "https://www.canton.network/hubfs/Logos/Ecosystem/Citadel%20Securities/CitSec-Logo%20(1).webp", "https://www.canton.network/hubfs/Logos/Ecosystem/Broadridge/Broadridge-logo-black.png", "https://www.canton.network/hubfs/Logos/Ecosystem/Circle/circle-logo-2021.svg", "https://www.canton.network/hubfs/logo-hsbc.svg"]
 
@@ -53,9 +55,9 @@ const WhyUsPage = () => {
                                         <p className='pt-5'>{e.desc}</p>
                                     </div>
                                     <div className="flex gap-2 items-center text-[#f6ffa4]">
-                            <a href="">More</a>
-                            <BiChevronRight />
-                        </div>
+                                        <a href="">More</a>
+                                        <BiChevronRight />
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -70,10 +72,10 @@ const WhyUsPage = () => {
                                 <h1 className='text-2xl font-semibold'>{r}</h1>
                                 <div className="flex gap-2">
                                     <Image
-                                    src="/images/logo.webp"
-                                    alt='Logo'
-                                    width={50}
-                                    height={50}
+                                        src="/images/logo.webp"
+                                        alt='Logo'
+                                        width={50}
+                                        height={50}
                                     />
                                     <strong>Canton</strong>
                                 </div>
@@ -83,6 +85,9 @@ const WhyUsPage = () => {
                 </section>
 
                 {/* faqs go here */}
+                <div className='max-w-[1440px] mx-auto py-16 px-6'>
+                    <Faqs items={faqData} />
+                </div>
             </div>
         </PageLayout>
     )

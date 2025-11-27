@@ -13,7 +13,7 @@ interface PageHeaderProps {
     hasFlexImage?: boolean
     flexImage?: string
     textOnly?: boolean
-    items: ItemProp[]
+    items?: ItemProp[]
 }
 
 const PageHeader: React.FC<PageHeaderProps> = ({ title, description, btnText, hasBgImage = true, hasFlexImage = false, flexImage, textOnly = false, items }) => {

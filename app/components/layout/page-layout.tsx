@@ -14,11 +14,11 @@ interface PageLayoutProps {
     items?: ItemProp[]
 }
 
-const PageLayout:React.FC<PageLayoutProps> = ({ children, title, description, btnText, flexImage, hasBgImage, hasFlexImage, textOnly, items }) => {
+const PageLayout:React.FC<PageLayoutProps> = ({ children, ...headerProps }) => {
   return (
     <div className="flex flex-col">
         <Navbar />
-        <PageHeader items={items as any[]} textOnly={textOnly} flexImage={flexImage} hasBgImage={hasBgImage} hasFlexImage={hasFlexImage} title={title} description={description} btnText={btnText} />
+        <PageHeader items={headerProps.items ?? []} {...headerProps} />
         {children}
         <Footer />
     </div>

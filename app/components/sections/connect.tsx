@@ -14,23 +14,23 @@ const ConnectSection = () => {
             <p className="text-lg mb-8">Connect with a community expert to learn how to:</p>
             <ul className="flex flex-col gap-4 text-lg">
               <li className="flex items-start gap-3">
-                <span className="text-[#f6ffa4] font-bold mt-1">•</span>
+                <span className="text-black font-bold mt-1">•</span>
                 <span>Connect a validator and start using assets and applications</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#f6ffa4] font-bold mt-1">•</span>
+                <span className="text-black font-bold mt-1">•</span>
                 <span>Tokenize assets on Canton</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#f6ffa4] font-bold mt-1">•</span>
+                <span className="text-black font-bold mt-1">•</span>
                 <span>Connect your wallet or custody services</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#f6ffa4] font-bold mt-1">•</span>
+                <span className="text-black font-bold mt-1">•</span>
                 <span>Create and launch new applications</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#f6ffa4] font-bold mt-1">•</span>
+                <span className="text-black font-bold mt-1">•</span>
                 <span>
                   Join the{" "}
                   <Link href="#" className="text-purple-600 hover:underline">
