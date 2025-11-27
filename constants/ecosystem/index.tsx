@@ -35,7 +35,7 @@ export const ecosystemRoles = [
     {
       id: 1,
       name: "4MGroup",
-      logo: "/images/partners/4mgroup.png",
+      logo: "/images/Digital-Asset-Favicon.svg",
       description: "Strategy and integration services.",
       tags: ["Tokenized assets"],
       role: "Service Provider",
@@ -45,7 +45,7 @@ export const ecosystemRoles = [
     {
       id: 2,
       name: "5N Loop Wallet",
-      logo: "/images/partners/5nloop.png",
+      logo: "/images/Digital-Asset-Favicon.svg",
       description: "A self-custody web-based wallet that emphasizes on security and UX.",
       tags: ["WALLETS"],
       role: "Apps (All)",
@@ -55,7 +55,7 @@ export const ecosystemRoles = [
     {
       id: 3,
       name: "7Ridge",
-      logo: "/images/partners/7ridge.png",
+      logo: "/images/Digital-Asset-Favicon.svg",
       description: "A global investment firm developing next-generation financial applications on Canton Network.",
       tags: ["DATA & ANALYTICS", "NAAS", "DEVELOPER TOOLS"],
       role: "Apps (All)",
@@ -65,7 +65,7 @@ export const ecosystemRoles = [
     {
       id: 4,
       name: "21shares",
-      logo: "/images/partners/21shares.png",
+      logo: "/images/Digital-Asset-Favicon.svg",
       description: "Offers a large suite of crypto-currency exchange-traded products (ETPs).",
       tags: ["TOKENIZED ASSETS"],
       role: "Financial Institutions",
@@ -75,7 +75,7 @@ export const ecosystemRoles = [
     {
       id: 5,
       name: "Akua Finance",
-      logo: "/images/partners/akua.png",
+      logo: "/images/Digital-Asset-Favicon.svg",
       description: "Digital asset infrastructure provider.",
       tags: [],
       role: "Service Provider",
@@ -85,7 +85,7 @@ export const ecosystemRoles = [
     {
       id: 6,
       name: "Alchemy",
-      logo: "/images/partners/alchemy.png",
+      logo: "/images/Digital-Asset-Favicon.svg",
       description: "Blockchain developer platform.",
       tags: ["DEVELOPER TOOLS"],
       role: "Service Provider",
@@ -95,7 +95,7 @@ export const ecosystemRoles = [
     {
       id: 7,
       name: "Amberdata",
-      logo: "/images/partners/amberdata.png",
+      logo: "/images/Digital-Asset-Favicon.svg",
       description: "Digital asset data and analytics.",
       tags: ["DATA & ANALYTICS"],
       role: "Service Provider",
@@ -105,7 +105,7 @@ export const ecosystemRoles = [
     {
       id: 8,
       name: "AmberTrading",
-      logo: "/images/partners/ambertrading.png",
+      logo: "/images/Digital-Asset-Favicon.svg",
       description: "Digital asset trading solutions.",
       tags: ["LIQUIDITY"],
       role: "Financial Institutions",
