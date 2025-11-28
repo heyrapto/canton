@@ -33,13 +33,14 @@ const Navbar = () => {
       ${scrolled ? "bg-[#1b1b1b] backdrop-blur-md shadow-lg" : "bg-transparent"}`}
     >
       <div className="mx-auto max-w-[1440px] px-6 flex justify-between w-full">
-        
+        <Link href={"/"}>
         <Image 
           src="/canton-logo-white.svg"
           width={250}
           height={250}
           alt="Logo"
         />
+        </Link>
 
         <div className="flex items-center gap-6">
           <ul className="flex gap-6 items-center">

@@ -150,7 +150,7 @@ const [activeTab, setActiveTab] = useState<ResourceTabKey>('community');
                             {resourceTabs.map((tab) => (
                                 <button
                                     key={tab.id}
-                                    onClick={() => setActiveTab(tab.id)}
+                                    onClick={() => setActiveTab(tab.id as ResourceTabKey)}
                                     className={`px-6 py-3 rounded-lg text-lg font-medium transition-colors cursor-pointer ${
                                         activeTab === tab.id
                                             ? 'bg-white text-black'
@@ -167,7 +167,7 @@ const [activeTab, setActiveTab] = useState<ResourceTabKey>('community');
                                 <div key={idx} className="bg-white rounded-2xl p-8 flex flex-col justify-between h-[350px]">
                                     <div>
                                         <h3 className="text-2xl font-semibold mb-4">{resource.title}</h3>
-                                        {resource.description && (
+                                        {'description' in resource && resource.description && (
                                             <p className="text-gray-700 leading-relaxed">
                                                 {resource.description}
                                             </p>
