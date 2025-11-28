@@ -17,6 +17,9 @@ const [activeTab, setActiveTab] = useState<ResourceTabKey>('community');
             <div className="flex flex-col gap-20 py-16">
                 <section className='mx-auto max-w-[1440px] px-6 gap-20'>
                     <h1 className='text-5xl mb-30'>Ready to start building on Canton?</h1>
+                    24-7-trading-settlement-risk-management.webp
+Dynamic-Financing.webp
+Treasury-balance-sheet-optimization.webp
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
                         {cards.map((card, idx) => (
                             <div

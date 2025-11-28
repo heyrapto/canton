@@ -103,3 +103,53 @@ export const testimonials = [
     },
   ];
   
+
+// Add to @/constants/build.ts or your constants file
+
+export const connectionsData = [
+    {
+      id: 1,
+      title: "Asset tokenization",
+      description: [
+        "Launch your tokenization offering and issue real-world assets and cash that move with privacy across the Canton Network.",
+        "Use pre-built tokenization utilities for fast time to market and DeFi like composability across the network. Onboard investors with verifiable credentials, automated on-chain."
+      ],
+      gifPath: "/gifs/Asset-Tokenization.gif"
+    },
+    {
+      id: 2,
+      title: "Custody and wallets",
+      description: [
+        "Connect with or provide digital asset custody services and solutions for assets, stablecoins and tokens on the Canton Network.",
+        "Access or build on top of wallet providers live on Canton and offer highly flexible custodial arrangements."
+      ],
+      gifPath: "/gifs/Custody-Services-and-Wallets.gif"
+    },
+    {
+      id: 3,
+      title: "Collateral mobility",
+      description: [
+        "Enable seamless movement of collateral across different applications and institutions on the Canton Network.",
+        "Unlock liquidity and improve capital efficiency through atomic, cross-application collateral transfers."
+      ],
+      gifPath: "/gifs/Collateral-Mobility.gif"
+    },
+    {
+      id: 4,
+      title: "On-chain payments",
+      description: [
+        "Process instant, secure payments on-chain with full privacy and regulatory compliance.",
+        "Integrate with existing payment rails and enable real-time settlement for institutional transactions."
+      ],
+      gifPath: "/gifs/On-chain-Payments.gif"
+    },
+    {
+      id: 5,
+      title: "24/7 financing",
+      description: [
+        "Access continuous financing markets that operate around the clock on the Canton Network.",
+        "Enable instant liquidity provision and borrowing with automated smart contract execution."
+      ],
+      gifPath: "/gifs/24-7-Financing.gif"
+    }
+  ]

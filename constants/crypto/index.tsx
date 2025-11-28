@@ -64,3 +64,32 @@ export const resourcesData = [
         fullName: "Canton"
     },
 ]
+
+// Add to @/constants/crypto.ts or wherever your crypto constants are
+
+export const onchainFinancingConnections = [
+    {
+      id: 1,
+      title: "Treasury and balance sheet optimization",
+      description: [
+        "Harness assets already live or on their way to the Canton Network to move between cash and yield on-chain - all while maintaining privacy. Switch between stablecoins and tokenized money market funds 24/7 to put idle cash to work for continuous balance sheet optimization."
+      ],
+      imagePath: "/images/Treasury-balance-sheet-optimization.webp"
+    },
+    {
+      id: 2,
+      title: "Dynamic financing",
+      description: [
+        "Deploy tokenized real-world assets into real-time financing workflows. Enable onchain repo and securities lending with tokenized US treasuries and Eurobonds, or high-utility tokenized money market funds to instantly finance new opportunities - even when markets you operate in are closed."
+      ],
+      imagePath: "/images/Dynamic-Financing.webp"
+    },
+    {
+      id: 3,
+      title: "24/7 trading, settlement and risk management",
+      description: [
+        "Round the clock financing operations on the only public chain with configurable privacy. Increase trading volume and investor confidence, move to automated margining, and significantly improve capital efficiency and utilization."
+      ],
+      imagePath: "/images/24-7-trading-settlement-risk-management.webp"
+    }
+  ]

@@ -16,6 +16,10 @@ body {
   }
 }
 
+h1, h2, h3 {
+  font-family: "Termina";
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-out;
 }

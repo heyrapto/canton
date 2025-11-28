@@ -3,12 +3,13 @@ import PageLayout from '../components/layout/page-layout'
 import { BiChevronRight } from 'react-icons/bi'
 import ConnectForm from '../components/ui/connect-form'
 import Testimonial from '../components/resuable/testimonial'
-import { testimonials } from '@/constants'
+import { connectionsData, testimonials } from '@/constants'
+import ConnectionsShowcase from '../components/resuable/showcase'
 
 const BuildPage = () => {
     return (
         <PageLayout title="Launch your Canton app, fast" description="Tokenize and mobilize real-world assets on-chain - with privacy and control" btnText="Developer docs">
-            <div className="mx-auto max-w-[1440px] gap-[100px] flex flex-col py-16">
+            <div className="mx-auto max-w-[1440px] gap-[100px] flex flex-col py-16 px-6">
                 <section className="flex flex-col gap-10">
                     <p className='text-6xl max-w-[900px] font-medium'>Build connected capital markets without compromise</p>
                     <div className="flex w-full gap-10">
@@ -47,11 +48,9 @@ const BuildPage = () => {
                     </div>
                 </section>
 
-                <section className='flex flex-col gap-3 w-full'>
-                        <h1 className='text-6xl font-medium max-w-[700px]'>Discover previously impossible connections, enabled by Canton</h1>
-                        <div className="flex justify-between w-full">
-                            {}
-                        </div>
+                <section className='flex flex-col gap-10 w-full'>
+                    <h1 className='text-6xl font-medium max-w-[700px]'>Discover previously impossible connections, enabled by Canton</h1>
+                    <ConnectionsShowcase connections={connectionsData} />
                 </section>
 
                 {/* testimonials section here */}
