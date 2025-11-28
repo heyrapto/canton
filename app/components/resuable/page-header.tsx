@@ -12,11 +12,12 @@ interface PageHeaderProps {
     hasBgImage?: boolean
     hasFlexImage?: boolean
     flexImage?: string
+    flexVideo?: string
     textOnly?: boolean
     items?: ItemProp[]
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title, description, btnText, hasBgImage = true, hasFlexImage = false, flexImage, textOnly = false, items }) => {
+const PageHeader: React.FC<PageHeaderProps> = ({ title, description, btnText, hasBgImage = true, hasFlexImage = false, flexImage, textOnly = false, items, flexVideo }) => {
     if (textOnly) {
         return (
             <header className={`relative w-full bg-[#1b1b1b] ${btnText ? "h-[500px]" : items ? "h-[700px]" : "h-[450px]"} overflow-hidden text-white`}>
@@ -49,7 +50,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, description, btnText, ha
         )
     }
 
-    if (hasFlexImage) {
+    if (hasFlexImage && flexImage) {
         return (
             <header className={`relative w-full bg-[#1b1b1b] ${btnText ? "h-[800px]" : "h-[500px]"} overflow-hidden text-white`}>
                 <div className="mt-[80px] z-10 max-w-[1440px] mx-auto h-full flex justify-between items-center px-6">
@@ -73,6 +74,34 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, description, btnText, ha
                         priority
                         className="object-contain"
                     />
+                </div>
+            </header>
+        )
+    } 
+
+    if (hasFlexImage && flexVideo) {
+        return (
+            <header className={`relative w-full bg-[#1b1b1b] ${btnText ? "h-[800px]" : "h-[500px]"} overflow-hidden text-white`}>
+                <div className="mt-[80px] z-10 max-w-[1440px] mx-auto h-full flex justify-between items-center px-6">
+                    <div className="flex flex-col gap-4 max-w-[500px]">
+                        <h1 className="text-5xl font-semibold text-white">{title}</h1>
+                        {description && (
+                            <p className="text-lg max-w-[600px]">{description}</p>
+                        )}
+                        {btnText && (
+                            <Button variant={'primary'} className="mt-20">
+                                {btnText}
+                            </Button>
+                        )}
+                    </div>
+
+                    <video
+                        width={650}
+                        height={650}
+                        className="object-contain rounded-3xl"
+                    >
+                        <source src={flexVideo as string} />
+                    </video>
                 </div>
             </header>
         )

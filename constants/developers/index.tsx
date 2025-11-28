@@ -1,20 +1,20 @@
 export const cards = [
     {
-      title: "Create valuable connections",
+      title: "Quests",
       description: "Connect with the live applications and participants in the ecosystem and start using institutional grade tokenized assets - with privacy. Get started with a validator today.",
       linkText: "Connect",
       href: "/connect",
       bgColor: "gray"
     },
     {
-      title: "Unlock exponential growth",
+      title: "Quickstart",
       description: "Rapidly launch privacy enabled, interoperable applications and tokenized assets on Canton, and connect with leading institutions in capital markets, payments and institutional crypto.",
       linkText: "Build",
       href: "/build",
       bgColor: "dark"
     },
     {
-      title: "Power market-level transformation",
+      title: "Certification",
       description: "Actively contribute and gain reciprocal value from the network by running infrastructure and services for Canton.",
       linkText: "run",
       href: "/run",

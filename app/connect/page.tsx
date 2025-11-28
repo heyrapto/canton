@@ -71,7 +71,7 @@ const ConnectPage = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                             {/* Left Section - Text Content */}
                             <div className="bg-white text-black p-12 rounded-lg">
-                                <h1 className="text-4xl font-bold mb-6">Request access today</h1>
+                                <h1 className="text-4xl font-semibold mb-6">Request access today</h1>
                                 <p className="text-lg mb-8">Apply for a validator via the Global Synchronizer Foundation directly at: <a href="" className='text-blue-600'>https://sync.global/validator-request/</a></p>
                                 <p className='pt-5'>Or set up a quick call with a community expert.</p>
                             </div>

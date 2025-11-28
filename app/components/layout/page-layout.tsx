@@ -10,6 +10,7 @@ interface PageLayoutProps {
     flexImage?: string
     hasBgImage?: boolean
     hasFlexImage?: boolean
+    flexVideo?: string
     textOnly?: boolean
     items?: ItemProp[]
 }

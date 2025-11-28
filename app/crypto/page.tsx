@@ -73,7 +73,7 @@ const CryptoPage = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                             {/* Left Section - Text Content */}
                             <div className="text-white p-12 rounded-lg">
-                                <h1 className="text-4xl font-bold mb-2">
+                                <h1 className="text-4xl font-semibold mb-2">
                                 Ready to connect?
                                 </h1>
                                 <span className='text-2xl'>Book a demo with our team</span>

@@ -108,7 +108,7 @@ const GlobalPage = () => {
                                     {j.links.map((b, k) => (
                                         <a
                                             key={k}
-                                            className="flex items-center gap-2 text-[#f6ffa4] font-bold hover:opacity-80"
+                                            className="flex items-center gap-2 text-[#f6ffa4] font-semibold hover:opacity-80"
                                         >
                                             {b.text} <BiChevronRight />
                                         </a>

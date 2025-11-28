@@ -17,16 +17,13 @@ const [activeTab, setActiveTab] = useState<ResourceTabKey>('community');
             <div className="flex flex-col gap-20 py-16">
                 <section className='mx-auto max-w-[1440px] px-6 gap-20'>
                     <h1 className='text-5xl mb-30'>Ready to start building on Canton?</h1>
-                    24-7-trading-settlement-risk-management.webp
-Dynamic-Financing.webp
-Treasury-balance-sheet-optimization.webp
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
                         {cards.map((card, idx) => (
                             <div
                                 key={idx}
                                 className={`${card.bgColor === "dark" ? "bg-[#1b1b1b] text-white" : "bg-gray-200 text-black"} rounded-[20px] p-8 flex flex-col gap-6 hover:border-gray-500 transition-colors`}
                             >
-                                <h3 className="text-2xl font-bold">{card.title}</h3>
+                                <h3 className="text-2xl font-semibold">{card.title}</h3>
                                 <p className="leading-relaxed grow">{card.description}</p>
                                 <Link
                                     href={card.href}
@@ -85,7 +82,7 @@ Treasury-balance-sheet-optimization.webp
                 <section className='mx-auto max-w-[1440px] px-6 gap-20'>
                     <div className="bg-white rounded-[20px] flex flex-col lg:flex-row-reverse items-center gap-12">
                         <div className="flex-1 flex flex-col gap-6">
-                            <h2 className="text-4xl font-bold text-black">Upcoming Hackathons</h2>
+                            <h2 className="text-4xl font-medium text-black">Upcoming Hackathons</h2>
                             <p className="text-lg text-gray-700 leading-relaxed max-w-[700px]">
                                 Join Canton Construct Ideathon: reimagine finance with Daml, AngelHack’s global virtual hackathon for builders to participate in Canton Network. November 13 - December 5, 2025. Selected teams receive mentorship and incubation.
                             </p>
@@ -169,7 +166,7 @@ Treasury-balance-sheet-optimization.webp
                             {resourcesData[activeTab].map((resource, idx) => (
                                 <div key={idx} className="bg-white rounded-2xl p-8 flex flex-col justify-between h-[350px]">
                                     <div>
-                                        <h3 className="text-2xl font-bold mb-4">{resource.title}</h3>
+                                        <h3 className="text-2xl font-semibold mb-4">{resource.title}</h3>
                                         {resource.description && (
                                             <p className="text-gray-700 leading-relaxed">
                                                 {resource.description}

@@ -1,5 +1,77 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-Demi.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-Heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Termina";
+  src: url("/fonts/TerminaTest-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: #fff;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -17,7 +89,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Termina";
+  font-family: "Termina", sans-serif;
 }
 
 .animate-fadeIn {

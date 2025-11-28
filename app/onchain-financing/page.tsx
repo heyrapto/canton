@@ -24,7 +24,7 @@ const OnchainFinancingPage = () => {
         "/images/QCP.webp",
     ]
     return (
-        <PageLayout title="Mobilize Assets for Real-time Financing On-chain" description='Instant liquidity across traditional and crypto capital markets with high-utility tokenized assets and instant convertibility for 24/7 onchain financing - on the only public network with privacy.' btnText='Book a demo' hasFlexImage flexImage=''>
+        <PageLayout title="Mobilize Assets for Real-time Financing On-chain" description='Instant liquidity across traditional and crypto capital markets with high-utility tokenized assets and instant convertibility for 24/7 onchain financing - on the only public network with privacy.' btnText='Book a demo' hasFlexImage flexVideo='/videos/Canton_UST_WG_v6.mp4'>
             <section className="bg-[#1b1b1b] text-white py-16">
                 <div className="mx-auto max-w-[1440px] px-6 gap-10">
                     <h1 className='text-5xl text-[#f6ffa4]'>Instant liquidity</h1>
@@ -121,7 +121,7 @@ const OnchainFinancingPage = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                         {/* Left Section - Text Content */}
                         <div className="text-white p-12 rounded-lg">
-                            <h1 className="text-4xl font-bold mb-2">
+                            <h1 className="text-4xl font-semibold mb-2">
                                 Ready to connect?
                             </h1>
                             <span className='text-2xl'>Book a demo with our team</span>

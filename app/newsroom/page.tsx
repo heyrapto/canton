@@ -49,7 +49,7 @@ const NewsroomPage = () => {
         {/* In the News Section */}
         <section className="mb-20">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-4xl font-bold">In the News</h2>
+            <h2 className="text-4xl font-semibold">In the News</h2>
             <Link 
               href="#" 
               className="text-purple-600 font-medium flex items-center gap-1 hover:text-purple-700 transition-colors group"
@@ -83,10 +83,10 @@ const NewsroomPage = () => {
 
         {/* Media Contact Section */}
         <section>
-          <h2 className="text-4xl font-bold mb-8">Media Contact</h2>
+          <h2 className="text-4xl font-semibold mb-8">Media Contact</h2>
           
           <div className="bg-[#1b1b1b] text-white rounded-[30px] p-12 max-w-[600px]">
-            <h3 className="text-3xl font-bold mb-2">{mediaContact.name}</h3>
+            <h3 className="text-3xl font-semibold mb-2">{mediaContact.name}</h3>
             <p className="text-gray-400 text-lg mb-8">{mediaContact.title}</p>
             
             <a 
